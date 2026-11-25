@@ -1,0 +1,14 @@
+print("SIMPLE-INTEREST CALCULATOR")
+print("=========================")
+principal = float(input("Enter the principal in naira: "))
+annual_rate = float(input("Enter the annual rate (%): "))
+time_months = float(input("Enter the time in months: "))
+time_years = time_months/12
+interest = (principal * annual_rate * time_years) / 100
+final_amount = principal + interest
+print()
+print(f"Principal: NGN {principal:,.2f}")
+print(f"Annual rate: {annual_rate:.2f}%")
+print(f"Time: {time_years:.2f} years")
+print(f"Simple interest: NGN {interest:,.2f}")
+print(f"Final amount: NGN {final_amount:,.2f}")
